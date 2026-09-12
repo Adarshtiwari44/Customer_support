@@ -794,15 +794,31 @@ python tests/test_end_to_end.py
 
 To access, clone, or contribute to this repository:
 
-```bash
-# Clone the repository
-git clone https://github.com/your-username/Customer_support.git
+1. Clone the repository
+   git clone <YOUR_GITHUB_URL>
 
-# Navigate into project directory
-cd Customer_support
+2. Go inside the project
+   cd customer-support-ai
 
-# Ensure git tracking is configured
-git status
+3. Create virtual environment
+   uv venv
+
+4. Activate it
+
+   Windows:
+   .venv\Scripts\activate
+
+   Mac/Linux:
+   source .venv/bin/activate
+
+5. Install requirements
+   uv pip install -r requirements.txt
+
+6. Create .env from .env.example
+   Add your Groq API key.
+
+7. Start the server
+   ./start_server.sh
 ```
 
 For questions, issues, or contributions, please open an issue or submit a pull request on GitHub.
