@@ -795,7 +795,7 @@ python tests/test_end_to_end.py
 To access, clone, or contribute to this repository:
 
 1. Clone the repository
-   git clone <YOUR_GITHUB_URL>
+   git clone <https://github.com/Adarshtiwari44/Customer_support.git>
 
 2. Go inside the project
    cd customer-support-ai
