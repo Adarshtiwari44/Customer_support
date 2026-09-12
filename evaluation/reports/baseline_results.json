@@ -1,0 +1,17 @@
+{
+  "trivial_baseline": {
+    "accuracy": 0.11848341232227488,
+    "macro_precision": 0.006582411795681938,
+    "macro_recall": 0.05555555555555555,
+    "macro_f1": 0.011770244821092278,
+    "weighted_f1": 0.025102417864888746
+  },
+  "simple_baseline": {
+    "accuracy": 0.5023696682464455,
+    "macro_precision": 0.4754356563438091,
+    "macro_recall": 0.4769651372592549,
+    "macro_f1": 0.4612903994365565,
+    "weighted_f1": 0.5089808643752727,
+    "note": "Never predicts UNKNOWN \u2014 trained only on non-UNKNOWN weak-labeled data"
+  }
+}

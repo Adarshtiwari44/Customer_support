@@ -1,0 +1,9 @@
+{
+  "version": "golden_set_v1",
+  "frozen_at": "2026-09-11T10:15:01.620713",
+  "total_examples": 211,
+  "sha256_checksum": "8ea6e6463b1a76820e47b75af9f623be058816f1b0a8c663e7d19267fd9d9af9",
+  "brand_id": "AmazonHelp",
+  "taxonomy_version": "intent_taxonomy_v1",
+  "sampling_method": "stratified by regex-proxy candidate label, manually reviewed and corrected"
+}

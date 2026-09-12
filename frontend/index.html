@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Support AI Agent</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div class="app">
+        <!-- ---- Sidebar ---- -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <span class="logo-icon">🛡️</span>
+                    <h1>Support AI</h1>
+                </div>
+                <p class="tagline">Amazon-style Customer Support Agent</p>
+            </div>
+
+            <div class="sidebar-info">
+                <h3>How it works</h3>
+                <div class="step"><span class="step-num">1</span> Understands your message</div>
+                <div class="step"><span class="step-num">2</span> Retrieves past similar cases</div>
+                <div class="step"><span class="step-num">3</span> Drafts a grounded response</div>
+                <div class="step"><span class="step-num">4</span> Validates for safety</div>
+                <div class="step"><span class="step-num">5</span> Routes: auto-handle or escalate</div>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="status-dot"></div>
+                <span>Pipeline active</span>
+            </div>
+        </aside>
+
+        <!-- ---- Main Chat Area ---- -->
+        <main class="chat-area">
+            <header class="chat-header">
+                <h2>Chat with Support Agent</h2>
+                <button id="clear-btn" class="btn-clear" title="Clear conversation">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+                    Clear
+                </button>
+            </header>
+
+            <div id="messages" class="messages">
+                <!-- Welcome message -->
+                <div class="message bot-message">
+                    <div class="message-avatar">🤖</div>
+                    <div class="message-content">
+                        <p>Hello! I'm the Customer Support AI Agent. Type your issue below and I'll classify it, find relevant past cases, and draft a response.</p>
+                        <p class="hint">Try something like: <em>"Where is my order? I placed it 5 days ago and it still hasn't arrived."</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <form id="chat-form" class="chat-input-area">
+                <input
+                    type="text"
+                    id="user-input"
+                    placeholder="Type your customer support message..."
+                    autocomplete="off"
+                    required
+                />
+                <button type="submit" id="send-btn" class="btn-send">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+            </form>
+        </main>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
